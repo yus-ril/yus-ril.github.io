@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.text-primary { color: #0C1D37; }
+.text-secondary { color: #E92C43; }
+.text-white { color: white; }
+
+.bg-primary { background-color: #0C1D37; }
+.bg-secondary { background-color: #E92C43; }
+.bg-white { background-color: white; }
+
+a { text-decoration: none; }
+
+.container {
+    width: 100%;
+    background-image: linear-gradient(#07e0fd, #E92C43);
+    padding-bottom: 30px;
+}
+
+header {
+    width: 100%;
+    padding: 40px 30px;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+main {
+    padding: 0 30px ;
+}
+
+.about_me h1 {
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.about_me h1::before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    border-radius: 3px;
+    margin-right: 30px;
+    width: 4px;
+    height: 36px;
+    background: white;
+}
+
+.about_me p {
+    font-weight: bold;
+    padding-left: 36px;
+    width: 280px;
+    font-size: 16px;
+}
+
+.card_my_skills {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 20px 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 30px;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(43, 38, 38, 0.03);
+}
+
+.card_title {
+    display: inline-block;
+    background: #0C1D37;
+    padding: 45px 0px;
+    border-radius: 15px;
+    position: relative;
+    top: -75px;
+}
+
+.card_title p {
+    font-size: 18px;
+    font-weight: bold;
+    transform: rotate(-90deg);
+}
+
+.skills {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.skills img {
+    width: 25px;
+    margin-bottom: 6px;
+}
+
+.bar_skill {
+    width: 130px;
+    height: 10px;
+    background: white;
+    display: inline-block;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: relative;
+    top: -13px;
+    padding: 3px;
+}
+
+.persentase_skill {
+    height: 6px;
+    border-radius: 7px;
+}
+
+.skills .cd .bar_skill .persentase_skill {
+    background: #61A706;
+    width: 50%;
+}
+
+.skills .fm .bar_skill .persentase_skill {
+    background: #21424E;
+    width: 40%;
+}
+
+.skills .alquran .bar_skill .persentase_skill {
+    background: #f8a408;
+    width: 59%;
+}
+
+.skills .ps .bar_skill .persentase_skill {
+    background: #0195f8;
+    width: 35%;
+}
+
+.education {
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.education h4 {
+    font-size: 34px;
+}
+
+.education .year {
+    display: inline-block;
+    padding: 7px 12px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(6, 6, 6, 0.2);
+    margin-bottom: 10px;
+}
+
+.card_mis, .card_smp, .card_sma, .card_univ {
+    display: inline-block;
+    width: 250px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(43, 38, 38, 0.03);
+}
+
+.place, .city {
+    text-align: right;
+}
+
+.place {
+    font-size: 18px;
+}
+
+.city {
+    font-size: 12px;
+}
+
+.card_smp {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.card_sma {
+    margin-top: 20px;
+}
+
+.card_univ {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 6px;
+    height: 380px;
+    background: white;
+    border-radius: 3px;
+    position: absolute;
+    top: 800px;
+    right: 200px;
+}
+
+
+
+@media only screen and (min-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 210px 380px;
+        grid-template-areas: 
+            "about_me card_my_skills"
+            "picture_svg education";
+    }
+    
+    .about_me {
+        grid-area: about_me;
+    }
+    
+    .about_me h1 {
+        font-size: 60px;
+    }
+
+    .about_me h1::before {
+        top: 10px;
+        width: 6px;
+        height: 60px;
+        background: white;
+    }
+
+    .about_me p {
+        width: 300px;
+    }
+
+    .card_my_skills {
+        grid-area: card_my_skills;
+        width: 550px;
+        border-radius: 40px;
+    }
+
+    .card_title {
+        padding: 60px 0px;
+        border-radius: 30px;
+    }
+
+    .card_title p {
+        font-size: 28px;
+    }
+
+    .skills {
+        margin-left: 50px;
+    }
+
+    .skills img {
+        width: 30px;
+    }
+
+    .bar_skill {
+        width: 260px;
+        height: 20px;
+        margin-left: 30px;
+        top: -10px;
+    }
+
+    .persentase_skill {
+        height: 14px;
+        border-radius: 7px;
+    }
+
+    .picture_svg {
+        width: 380px;
+        grid-area: picture_svg;
+    }
+
+    .education {
+        grid-area: education;
+    }
+
+    .card_mis, .card_smp, .card_sma, .card_univ {
+        position: relative;
+    }
+
+    .card_smp {
+        left: 50px;
+        top: 70px;
+        margin: 0;
+    }
+
+    .card_sma {
+        top: 50px;
+        margin: 0;
+    }
+
+    .card_univ {
+        left: 50px;
+        top: 120px;
+        margin: 0;
+    }
+
+    .line {
+        top: 350px;
+        right: 395px;
+        height: 300px;
+    }
+}

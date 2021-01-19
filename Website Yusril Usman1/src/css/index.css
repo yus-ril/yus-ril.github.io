@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.text-primary { color: #0dedf5; }
+.text-secondary { color: #e40aec; }
+.text-white { color: white; }
+
+.bg-primary { background-color: #26ebe1; }
+.bg-secondary { background-color: #114df5; }
+.bg-white { background-color: white; }
+
+.iconify { color: white; }
+a { text-decoration: none; }
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#07e0fd, #E92C43);
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    padding: 40px 30px;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+main {
+    padding: 0 30px ;
+}
+
+.jumbotron {
+    margin-top: 100px;
+}
+
+.jumbotron__name h1 {
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+
+.jumbotron__name {
+    margin-bottom: 20px;
+}
+
+.jumbotron__button {
+display: inline-block;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(40px);
+    border-radius: 40px;
+    font-size: 12px;
+    background-clip: padding-box;
+    box-shadow: 10px 10px 10px rgba(43, 38, 38, 0.03);
+    font-weight: bold;
+}
+.tugas {
+display: inline-block;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(40px);
+        border-radius: 40px;
+        font-size: 12px;
+        background-clip: padding-box;
+        box-shadow: 10px 10px 10px rgba(43, 38, 38, 0.03);
+        font-weight: bold;
+    }
+.social-media a {
+    margin-right: 0.4rem;
+}
+
+.social-media a .iconify { 
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (min-width: 768px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr 3.3fr;
+        padding: 0;
+    }
+    
+    .line {
+        width: 80%;
+        height: 6px;
+        border-radius: 3px;
+        margin-top: 295px;
+    }
+    
+    .jumbotron {
+        margin-top: 142px;
+    }
+    
+    .jumbotron__name {
+        margin-bottom: 20px;
+    }
+    
+    .jumbotron__name h1 {
+        font-size: 3.1rem;
+    }
+    
+    .jumbotron__button {
+        font-size: 16px;
+    }
+    .tugas {
+        font-size: 16px;
+    }
+
+    .image {
+        height: 85%;
+        bottom: 0;
+        left: 39%;
+    }
+    
+}
